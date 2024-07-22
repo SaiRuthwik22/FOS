@@ -19,6 +19,7 @@ function getMenu(){
                     </div>`
             })
         })
+        .catch(err=>console.log("error",err))
 }
 getMenu()
 function takeOrder() {
@@ -68,3 +69,4 @@ takeOrder()
         console.log("Payment Status:",res)
         return thankyouFnc()
     })
+    .catch(err=>console.log("error",err))
